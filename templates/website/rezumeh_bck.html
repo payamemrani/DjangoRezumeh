@@ -1,8 +1,25 @@
-{% extends 'website/base.html' %}
 {% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static 'css/w3.css' %}">
+<link rel="stylesheet" href="{% static 'css/css.css' %}">
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="w3-light-grey">
 
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-{% block content %}
+  <!-- The Grid -->
+  <div class="w3-row-padding">
   
     <!-- Left Column -->
     <div class="w3-third">
@@ -106,7 +123,11 @@
       <br>
         </div>
       </div>
-      
+
+
+
+
+
 
     <div class="w3-twothird">
       <div class="w3-container w3-card w3-white">
@@ -141,11 +162,27 @@
           <p>از مکتب خونه</p>
                     <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>به زودی</h6>
                 
-        </div>       
+        </div>
+        
+        
+       
         
         
       </div>
 
     <!-- End Right Column -->
     </div>
-{% endblock %}
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+<a href="https://www.instagram.com/payam.emrani">  <i class="fa fa-instagram w3-hover-opacity w3-margin"> شبکه اجتماعی</i> </a>
+
+</footer>
+
+</body>
+</html>
